@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-bg: #cb927f;
+  --secondary-textss: #292929;
+  --terc-color: #d4d3d1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section-m1 {
+  margin: 50px 0;
+}
+
+.section-p1 {
+  padding: 40px 50px;
+}
+
+.section-p {
+  padding: 10px 50px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.03),
+    0px 4.4px 10px rgba(0, 0, 0, 0.049);
+  background-color: #fff;
+}
+#header .logo h1 {
+  font-weight: 500px;
+  font-size: larges;
+}
+#header ul {
+  display: flex;
+  text-wrap: nowrap;
+  list-style: none;
+}
+
+#header ul li {
+  margin-left: 20px;
+}
+#header ul li a {
+  text-decoration: none;
+  color: var(--secondary-textss);
+}
+#header ul li a:hover,
+#header ul li a.active {
+  color: #cb927f;
+  font-weight: 500;
+}
+
+#header ul li a:active {
+  color: #cb927f;
+  font-weight: 500;
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  gap: 60px;
+}
+
+#hero .text {
+  margin-left: 10%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+#hero .text span,
+#hero .text h3 {
+  margin: 5px;
+}
+#hero .text h1 {
+  padding: 0 10px;
+}
+
+#hero .btn1 button {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  padding: 0.8em 1.4em;
+  margin: 0 0.1em 0.1em 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #cb927f;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+#hero .btn2 button {
+  display: inline-block;
+  padding: 0.8em 1.4em;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0.1em 0.1em 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #030303;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  transition: 0.3s;
+}
+#hero .btn2 button:hover {
+  border: 2px solid rgb(14, 14, 14);
+}
+#hero .btn1 button:hover {
+  border: 2px solid #cb927f;
+}
+#hero .btn2 a {
+  color: #fff;
+}
+#hero .btn1 a {
+  color: #fff;
+}
+#hero .btn {
+  display: flex;
+  gap: 10px;
+}
+
+#hero .icons {
+  font-size: 25px;
+}
+
+#hero img {
+  width: 250px;
+  float: left;
+  margin-right: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: anifoto 8s ease-in-out infinite;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s ease-in;
+  overflow: hidden;
+  scroll-behavior: none;
+  gap: 90px;
+}
+
+#about img {
+  width: 250px;
+  overflow: hidden;
+}
+
+#about .texto {
+  width: 400px;
+  margin-right: 40px;
+}
+
+#about .texto p {
+  color: var(--texto-escuro);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#about button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#about button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+#about a {
+  text-decoration: none;
+}
+
+#about button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--texto-vermelho);
+  border-radius: 1.625rem;
+}
+
+#about button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+#about button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+#about button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+#about button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#about button:hover .circle {
+  width: 100%;
+}
+
+#about button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+#about button:hover .button-text a {
+  color: #fff;
+}
+@keyframes anifoto {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+#progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Altura da barra de progresso */
+  background-color: #fff;
+  z-index: 9999;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #cb927f; /* Cor da barra de progresso */
+}
