@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <script defer src="assets/js/script.js"></script>
     <link
       rel="stylesheet"
@@ -16,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/mediaqueries.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
@@ -24,7 +26,40 @@
     <div id="progress-bar-container">
       <div id="progress-bar"></div>
     </div>
-    <!-- Sessão Header -->
+    <nav id="header">
+      <div class="logo">
+        <h1>Portfólio</h1>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#hero">Página Inicial</a></li>
+          <li><a href="#esperience">Experiências</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#project">Projectos</a></li>
+          <li><a href="#contact">Contactos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <h1>Portfólio</h1>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#hero" onclick="toggleMenu()">Página Inicial</a></li>
+          <li><a href="#esperience" onclick="toggleMenu()">Experiências</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contactos</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Sessão Header
     <section id="header">
       <div class="logo">
         <h1>Portfólio</h1>
@@ -39,8 +74,7 @@
         </ul>
       </div>
     </section>
-    <!--Fim Sessão Header -->
-
+    Fim Sessão Header -->
     <!-- Sessão Hero -->
     <section id="hero">
       <div class="text">
