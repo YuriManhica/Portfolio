@@ -159,6 +159,7 @@ body {
 }
 #esperience {
   height: 80vh;
+  border-radius: 1px solid rgba(0, 0, 0, 0.6);
 }
 #esperience h2 {
   text-align: center;
