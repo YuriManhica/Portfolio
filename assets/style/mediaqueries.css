@@ -1,10 +1,11 @@
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 767px) {
   body {
     width: 100%;
   }
   #header {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
     justify-content: space-between;
@@ -12,11 +13,11 @@
     width: 100%;
   }
   #hamburger-nav .logo {
-    font-size: 16px;
-    margin-left: 60px;
+    font-size: 15px;
+    margin-left: 40px;
   }
   #hamburger-nav .hamburger-menu {
-    margin-right: 80px;
+    margin-right: 40px;
   }
 
   #hero {
