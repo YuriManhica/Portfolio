@@ -248,3 +248,113 @@ body {
   width: 0;
   background-color: var(--span-text); /* Cor da barra de progresso */
 }
+
+/* Desktop Styles (default) */
+@media only screen and (min-width: 768px) {
+  /* Add any styles that should apply to desktop here */
+  body {
+    font-size: 16px; /* Adjust as needed for desktop */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px; /* Adjust font size for tablets */
+  }
+
+  #header {
+    height: 60px;
+    width: 100%;
+  }
+
+  #header .logo h1 {
+    font-size: 24px; /* Adjust logo font size for tablets */
+  }
+
+  #hero {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #hero img {
+    width: 250px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  #hero .text {
+    text-align: center;
+  }
+
+  #hero .text h2 {
+    font-size: 24px; /* Adjust heading font size for tablets */
+  }
+
+  #hero .btn1 button,
+  #hero .btn2 button {
+    font-size: 14px; /* Adjust button font size for tablets */
+  }
+
+  #esperience h2 {
+    font-size: 24px; /* Adjust section heading font size for tablets */
+  }
+
+  #esperience .flex .box {
+    width: 100%;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  #header {
+    height: 50px;
+  }
+
+  #header .logo h1 {
+    font-size: 20px; /* Adjust logo font size for mobile */
+  }
+
+  #hero {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #hero img {
+    width: 250px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  #hero .text {
+    text-align: center;
+  }
+
+  #hero .text h2 {
+    font-size: 20px; /* Adjust heading font size for mobile */
+  }
+
+  #hero .btn1 button,
+  #hero .btn2 button {
+    font-size: 12px; /* Adjust button font size for mobile */
+  }
+
+  #esperience h2 {
+    font-size: 20px; /* Adjust section heading font size for mobile */
+  }
+
+  #esperience .flex .box {
+    width: 100%;
+  }
+
+  #footer {
+    padding: 20px;
+  }
+}
