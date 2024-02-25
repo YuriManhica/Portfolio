@@ -23,9 +23,10 @@
     margin: auto;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 30px;
   }
   #hero img {
-    width: 250px;
+    width: 240px;
     display: block;
     margin: auto;
     overflow: hidden;
