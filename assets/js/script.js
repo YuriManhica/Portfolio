@@ -51,6 +51,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Adicionar evento de rolagem para atualizar 'active' ao rolar
 document.addEventListener("scroll", function () {
   updateActiveLink("#hero");
+  updateActiveLink("#esperience");
   updateActiveLink("#about");
   updateActiveLink("#project");
   updateActiveLink("#contact");
