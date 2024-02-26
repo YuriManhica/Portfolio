@@ -135,13 +135,15 @@ a,
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 70px;
   position: sticky;
   box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.03),
     0px 4.4px 10px rgba(0, 0, 0, 0.049);
   background-color: var(--bg-button);
+  gap: 1.5rem;
+  
 }
 #header .logo h1 {
   font-weight: 500px;
@@ -175,7 +177,7 @@ a,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
+  height: 900px;
   width: 100%;
   overflow: hidden;
   gap: 60px;
@@ -189,6 +191,7 @@ a,
   justify-content: center;
   align-items: center;
   gap: 5px;
+  text-wrap: nowrap;
 }
 
 #hero .text h2 {
@@ -244,11 +247,11 @@ a,
 }
 
 #hero .icons {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 #hero img {
-  width: 250px;
+  width: 350px;
   float: left;
   margin-right: 100px;
   background-size: cover;
@@ -259,20 +262,22 @@ a,
 }
 #esperience {
   height: 80vh;
-  border-radius: 1px solid rgba(0, 0, 0, 0.6);
 }
 #esperience h2 {
   text-align: center;
   padding: 40px;
   font-size: 30px;
+  padding-bottom: 100px;
 }
 #esperience .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: start;
-  gap: 35px;
-  width: 90%;
+  gap: 50px;
+  width: 100%;
   margin: auto;
+  border-bottom-left-radius: 6px;
+  
 }
 #esperience .flex .box {
   width: 350px;
@@ -289,7 +294,7 @@ a,
   padding: 10px 0;
 }
 #esperience .flex .text p {
-  font-size: 13px;
+  font-size: 12px;
   font-family: "Poppins", sans-serif;
   margin-left: 10px;
   padding: 4px 0;
