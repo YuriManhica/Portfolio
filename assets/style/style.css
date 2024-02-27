@@ -97,6 +97,10 @@ a,
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
+.menu-links a.active {
+  color: var(--span-text);
+  font-weight: 500;
+}
 
 .menu-links li {
   list-style: none;
@@ -136,15 +140,18 @@ a,
   top: 0;
   left: 0;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-evenly;
+=======
+  justify-content: space-around;
+>>>>>>> b356dc453142d0643ba7747ae62a7d41ade44f6d
   align-items: center;
-  height: 70px;
+  height: 60px;
   position: sticky;
   box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.03),
     0px 4.4px 10px rgba(0, 0, 0, 0.049);
   background-color: var(--bg-button);
   gap: 1.5rem;
-  
 }
 #header .logo h1 {
   font-weight: 500px;
@@ -170,7 +177,7 @@ a,
   font-weight: 500;
 }
 
-#header ul li a.active {
+#header .navbar a.active {
   color: var(--span-text);
   font-weight: 500;
 }
@@ -179,7 +186,7 @@ a,
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  height: 650px;
   width: 100%;
   overflow: hidden;
   gap: 60px;
@@ -194,7 +201,11 @@ a,
   align-items: center;
   gap: 5px;
   text-wrap: nowrap;
+<<<<<<< HEAD
   
+=======
+  padding: 10px;
+>>>>>>> b356dc453142d0643ba7747ae62a7d41ade44f6d
 }
 
 #hero .text h2 {
@@ -254,7 +265,7 @@ a,
 }
 
 #hero img {
-  width: 350px;
+  width: 300px;
   float: left;
   margin-right: 100px;
   background-size: cover;
@@ -281,7 +292,6 @@ a,
   width: 100%;
   margin: auto;
   border-bottom-left-radius: 6px;
-  
 }
 #esperience .flex .box {
   width: 350px;
@@ -296,6 +306,12 @@ a,
 }
 #esperience .flex .text h3 {
   padding: 10px 0;
+}
+#esperience .flex .text {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #esperience .flex .text p {
   font-size: 13px;
