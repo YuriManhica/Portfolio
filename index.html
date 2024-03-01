@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="assets/js/script.js"></script>
     <link
       rel="stylesheet"
@@ -62,7 +62,9 @@
     </nav>
     <!-- Fim Sessão Header -->
     <!-- Sessão Hero -->
-    <section id="hero">
+    <section data-aos="fade-up"
+    data-aos-duration="3000" 
+    id="hero">
       <div class="text">
         <p>Bem-vindo! 🌟</p>
         <span>Respondo por</span>
@@ -98,7 +100,8 @@
     <!--Fim Sessão Hero -->
 
     <!-- Sessão de Especialidades -->
-    <section id="esperience">
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" data-aos-duration="1000" id="esperience">
       <div class="interface">
         <h2>
         Experiências
@@ -143,19 +146,32 @@
     <!--Fim Sessão de Especialidades -->
 
     <!-- Sessão Sobre mim -->
-    <section id="about">
-    .
+    <section data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" id="about">
+      <div class="about_text">
+        <h3>Mais</h3>
+        <h2>Sobre Mim</h2>
+        <p>Sou um entusiasta da Web e apaixonado por transformar ideias em código. Com uma sólida base em HTML, CSS e JavaScript, estou sempre em busca de novos desafios para aprimorar minhas habilidades.</p>
+        <button class="button">
+          <a class=".btn-txt" href="#contact">Contacte-me</a>
+        </button>
+      </div>
+      <div class="about_img">
+        <img src="assets/img/me2.jpg" alt="">
+      </div>
     </section>
     <!--Fim Sessão Sobre mim -->
 
     <!-- Sessão Projetos -->
 
-    <div class="portfolio" id="project">
+    <div data-aos="fade-up"
+    data-aos-duration="3000" class="portfolio" id="project">
       <div class="header">
           <div class="info">
               <h2>Projectos Recentes</h2>
           </div>
-          <button><a href="https://www.github.com/YuriManhica/"><i class='bx bxl-github'></i>Visita Meu GitHub</a> </button>
+          <button><a href="https://www.github.com/YuriManhica/" target="_blank"><i class='bx bxl-github'></i>Visita Meu GitHub</a> </button>
       </div>
 
       <div class="portfo-items">
@@ -170,27 +186,31 @@
               </div>
           </div>
           <div class="item">
-              <img src="assets/img/pplo.png" alt="Brevemente">
+              <img src="assets/img/soon.png" alt="Brevemente">
               <div class="info">
                   <h4>Em desenvolvimento...</h4>
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
                   </p>
-                  <a href="#">View in Youtube <i class='bx bx-link-external'></i></a>
+                  <a href="#">Visitar<i class='bx bx-link-external'></i></a>
               </div>
           </div>
           <div class="item">
-              <img src="assets/img/ppp.png" alt="Brevemente">
+              <img src="assets/img/soon.png" alt="Brevemente">
               <div class="info">
                   <h4>Em desenvolvimento...</h4>
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
                   </p>
-                  <a href="#">View in Youtube <i class='bx bx-link-external'></i></a>
+                  <a href="#">Visitar<i class='bx bx-link-external'></i></a>
               </div>
           </div>
       </div>
     <!--Fim da Sessão Projetos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </div>
   </body
 </html>

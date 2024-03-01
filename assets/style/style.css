@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
   --span-text: #cb927f;
@@ -26,9 +28,10 @@
 a {
   color: var(--text);
   text-decoration: none;
+  font-family: "Jost", sans-serif;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 html {
@@ -174,16 +177,23 @@ a,
   font-size: 17px;
   text-decoration: none;
   color: var(--secondary-textss);
+  width: 0%;
 }
 #header ul li a:hover,
 #header ul li a.active {
   color: var(--span-text);
-  
+  width: 0%;
 }
 
 #header .navbar a.active {
   color: var(--span-text);
   font-weight: 500;
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--span-text);
+  height: 32px;
+  width: 50%;
+  transition: 0.4s;
 }
 
 #hero {
@@ -340,7 +350,7 @@ box-shadow: 0 0 25px #cb927f36,
   margin-right: auto;
 }
 #esperience .flex .text p {
-  font-size: 13px;
+  font-size: 14px;
   margin-left: 10px;
   padding: 4px 0;
   line-height: 1.8;
@@ -372,7 +382,78 @@ box-shadow: 0 0 25px #cb927f36,
   margin: 5px;
   cursor: pointer;
 }
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 100px 100px 50px;
+}
 
+#about .about_text{
+  width: 500px;
+  padding: 15px;
+}
+#about .about_text h3{
+  color: var(--span-text);
+}
+#about .about_text p{
+  padding-top: 20px;
+}
+.fade-up{
+  transition: ease-in-out 2s;
+}
+#about .about_text button{
+  margin-top: 40px;
+  display: inline-block;
+  padding: 15px;
+}
+#about .about_text button a {
+  z-index: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid var(--span-text);
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--span-text);
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 50px var(--span-text);
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+#about .about_img img{
+  height: 500px;
+  padding: 15px;
+}
 .portfolio{
   background-color: var(--span-text);
   padding: 110px 85px;
@@ -410,7 +491,7 @@ box-shadow: 0 0 25px #cb927f36,
 .portfolio .header button a{
   color: #cb927f;
   display: flex;
-gap: 6px;
+  gap: 4px;
   justify-content: center;
   align-items: center;
 }
