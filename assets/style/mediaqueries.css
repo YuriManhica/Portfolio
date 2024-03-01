@@ -17,7 +17,7 @@
     margin-left: 20%;
   }
   #hamburger-nav .hamburger-menu {
-    margin-right: 20%;
+    margin-right: 15%;
   }
 
   #hero {
@@ -45,13 +45,26 @@
   #esperience .interface h2 {
     padding-bottom: 80px;
   }
-
+  #esperience .flex .box {
+    width: 100%;
+  }
   #esperience .flex {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
+  .portfolio .portfo-items{
+    flex-direction: column;
+  }
+  .portfolio .portfo-items .item{
+    width: 100%;
+    margin-block: 20px;
+  }
+  .portfolio .portfo-items .item:hover{
+    transform: scale(1.05) ; 
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -63,10 +76,12 @@
     margin-right: 30px;
   }
   #esperience .flex .text {
-    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  #esperience .flex .box {
+    width: 100%;
   }
   .menu-links a {
     font-size: 10px;

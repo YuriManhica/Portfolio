@@ -1,3 +1,9 @@
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+    header.classList.toggle ("Sticky", window.scrollY > 120 );
+})
+
 document.addEventListener("scroll", function () {
   const scrollTop =
     document.documentElement.scrollTop || document.body.scrollTop;
