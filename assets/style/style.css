@@ -141,8 +141,6 @@ a,
   padding: 16px 16%;
 }
 #header {
-  
-  font-family: 'Gilroy', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -173,7 +171,7 @@ a,
   margin-left: 20px;
 }
 #header ul li a {
-  font-size: 19px;
+  font-size: 17px;
   text-decoration: none;
   color: var(--secondary-textss);
 }
@@ -398,7 +396,10 @@ box-shadow: 0 0 25px #cb927f36,
   border: none;
   border-radius: 10px;
 }
-
+.portfolio .header button:hover{
+  
+  transform: scale(1.05) ;
+}
 .portfolio .header button i{
   font-size: 26px;
 }
