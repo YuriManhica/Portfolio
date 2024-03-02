@@ -24,6 +24,7 @@
   padding: 10px 50px;
 }
 a {
+  line-height: 1.5;
   color: var(--text);
   text-decoration: none;
   font-family: "Jost", sans-serif;
@@ -195,35 +196,50 @@ a,
 }
 
 #hero {
+  height: 100%;
+  width: 100%;
   margin-block: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 90vh;
   overflow: hidden;
-  gap: 60px;
+  gap: 30px;
 }
 
 #hero .text {
-  margin-left: 10%;
-  margin-right: 5%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
-  text-wrap: nowrap;
+  text-wrap: wrap;
+  width: 500px;
 }
-
+#hero .text img {
+  width: 20px;
+}
+#hero .text p {
+  margin-left: 5px;
+}
+#hero .text h3 {
+  color: var(--span-text);
+}
 #hero .text h2 {
   font-size: 30px;
+  font-family: "poppins", sans-serif;
   margin: 0;
   padding: 0;
+}
+#hero .text .p {
+  text-align: center;
+  margin: 0;
+  margin-block-end: 10px;
 }
 
 #hero .btn1 button {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
   padding: 0.8em 1.4em;
   margin: 0 0.1em 0.1em 0;
   border: none;
@@ -234,7 +250,7 @@ a,
   font-weight: 300;
   text-align: center;
   cursor: pointer;
-  transition: all 0.8s;
+  transition: all ease-in-out 1s;
 }
 #hero .btn2 button {
   display: inline-block;
@@ -248,23 +264,28 @@ a,
   text-decoration: none;
   font-weight: 300;
   text-align: center;
-  transition: 0.3s;
+  transition: all ease-in-out 1s;
 }
 #hero .btn2 button:hover {
   border: 2px solid rgb(14, 14, 14);
+  transition: all ease-in-out 1s;
 }
 #hero .btn1 button:hover {
   border: 2px solid var(--span-text);
+  transition: all ease-in-out 1s;
 }
 #hero .btn2 a {
   color: var(--bg-button);
+  transition: all ease-in-out 1s;
 }
 #hero .btn1 a {
   color: var(--bg-button);
+  transition: all ease-in-out 1s;
 }
 #hero .btn {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  transition: all ease-in-out 1s;
 }
 #hero .icons {
   gap: 20px;
@@ -282,7 +303,7 @@ a,
   transform: scale(1.1);
   transition: all ease-in-out 0.5s;
 }
-#hero img {
+#hero .img img {
   width: 300px;
   float: left;
   margin-right: 100px;
@@ -315,17 +336,13 @@ a,
   font-size: 30px;
 }
 #esperience .flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
   align-items: start;
-  gap: 50px;
-  width: 100%;
-  margin: auto;
-  border-bottom-left-radius: 6px;
 }
 #esperience .flex .box {
-  width: 30%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 #esperience .flex .box .icon {
   margin-bottom: 20px;
@@ -354,28 +371,6 @@ a,
   height: 120px;
 }
 
-#footer {
-  background: linear-gradient(to top, #cb927f 0%, #282936 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--bg-button);
-  padding: 40px 100px 0 50px;
-  height: 100px;
-}
-
-#footer .social-medias {
-  margin-bottom: 20px;
-}
-#footer .social-medias i {
-  font-size: 28px;
-  /* border: 2px solid #fff; */
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-  cursor: pointer;
-}
 #about {
   height: 100vh;
   display: flex;
@@ -449,6 +444,7 @@ a,
 #about .about_img img {
   height: 500px;
   padding: 15px;
+  filter: saturate(120%);
 }
 .portfolio {
   background-color: var(--span-text);
@@ -540,6 +536,84 @@ a,
   font-size: 16px;
 }
 
+#contact {
+  background: var(--bg-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--bg-button);
+  padding: 40px 100px 0 50px;
+  height: 350px;
+}
+#contact .container-col {
+  background: var(--span-text);
+  border-radius: 8px;
+  width: 700px;
+  margin: auto;
+  color: var(--bg-button);
+  padding: 30px;
+  background-position: center;
+  background-size: cover;
+}
+#contact .inpu_btn input::placeholder {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  border: none;
+}
+#contact .inpu_btn input:hover {
+  border: none;
+  font-family: "Jost", sans-serif;
+}
+#contact input {
+  border: none;
+  font-family: "Jost", sans-serif;
+}
+#contact .inpu_btn form {
+  display: flex;
+  align-items: center;
+}
+#contact .inpu_btn input {
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0 20px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+#contact .inpu_btn input:focus {
+  outline: none;
+  font-size: 15px;
+}
+#contact .inpu_btn button {
+  background-color: var(--text);
+  color: var(--bg-button);
+  height: 50px;
+  border: none;
+  width: 20%;
+  font-size: 16px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* #contact h2,
+h4 {
+  color: var(--text);
+} */
+#contact .inpu_btn a {
+  color: var(--bg-button);
+}
+#footer {
+  background: var(--bg-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  height: 100px;
+  padding: 20px 100px 0 20px;
+  text-align: center;
+}
 @keyframes anifoto {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;

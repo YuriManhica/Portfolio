@@ -26,6 +26,7 @@
     <div id="progress-bar-container">
       <div id="progress-bar"></div>
     </div>
+
     <!-- Sessão Header -->
     <nav id="header">
       <div class="logo">
@@ -66,10 +67,11 @@
     data-aos-duration="3000" 
     id="hero">
       <div class="text">
-        <p>Bem-vindo! 🌟</p>
+        <p>Bem-vindo<span>!!</span> <img src="assets/img/mao-acenando.png" alt="✨"></p>
         <span>Respondo por</span>
         <h2>Yuri Manhiça</h2>
         <h3>Desenvolvedor de Software 🖥️</h3>
+        <p class="p">Sou um entusiasta WEB, baseado na Matola. <br>Apaixonado por transformar ideias em código. </p>
         <div class="btn">
           <div class="btn1">
             <button>
@@ -80,9 +82,9 @@
               >
             </button>
           </div>
-          <div class="btn2">
+          <!--<div class="btn2">
             <button><a href="#contact">Contacte-me</a></button>
-          </div>
+          </div>-->
         </div>
         <div class="icons">
           <a href="https://www.linkedin.com/in/yuri-manhiça/" target="_blank">
@@ -144,7 +146,6 @@
       </div>
     </section>
     <!--Fim Sessão de Especialidades -->
-
     <!-- Sessão Sobre mim -->
     <section data-aos="fade-down"
     data-aos-easing="linear"
@@ -164,7 +165,6 @@
     <!--Fim Sessão Sobre mim -->
 
     <!-- Sessão Projetos -->
-
     <div data-aos="fade-up"
     data-aos-duration="3000" class="portfolio" id="project">
       <div class="header">
@@ -206,11 +206,36 @@
               </div>
           </div>
       </div>
+    </div>
     <!--Fim da Sessão Projetos -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Sessão Contato -->
+    <div id="contact">
+      <div class="container">
+        <div class="container-col" style="background-image:url('assets/img/waa.jpg')">
+          <h2>Para mais Informações</h2>
+          <h4>envie uma mensagem</h4>
+          <div class="inpu_btn">
+            <form action="mailto:yurimanhica4@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="mensagem" placeholder="mensagem...." required>
+                <button type="submit" class="bt">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim da Sessão Contato -->
+    
+    <!--Sessão Footer -->
+    <div id="footer">
+      <p>© Copyright - Yuri Carlito Manhiça | Todos os direitos reservados.<br>
+      Portfólio</p>
+      
+    </div>
+    <!--Fim da Sessão Footer -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-  </div>
   </body
 </html>
