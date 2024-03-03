@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script defer src="assets/js/script.js"></script>
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
@@ -23,26 +23,36 @@
     <title>Portfólio</title>
   </head>
   <body>
+    
+    <!-- Barra de Progresso -->
     <div id="progress-bar-container">
       <div id="progress-bar"></div>
     </div>
+    <!--Fim da Barra de Progresso -->
 
     <!-- Sessão Header -->
     <nav id="header">
       <div class="logo">
-        <h1><a href="">Portfólio</a></h1>
+        <h1><a id="port" href="" data-translate="Port">Portfólio</a></h1>
       </div>
       <div class="navbar">
         <ul>
-          <li><a href="#hero">Página Inicial</a></li>
-          <li><a href="#esperience">Experiências</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#project">Projectos</a></li>
-          <li><a href="#contact">Contactos</a></li>
+          <li><a href="#hero" id="home-link" data-translate="homeLink">Página Inicial</a></li>
+          <li><a href="#esperience" id="experience-link" data-translate="experienceLink">Experiências</a></li>
+          <li><a href="#about" id="about-link" data-translate="aboutLink">Sobre</a></li>
+          <li><a href="#project" id="projects-link" data-translate="projectsLink">Projetos</a></li>
+          <li><a href="#contact" id="contact-link" data-translate="contactLink">Contactos</a></li>
         </ul>
       </div>
+      <div id="language-selector">
+        <label id="idioma" data-translate="idioma" for="language">Idioma: </label>
+        <select id="language" onchange="changeLanguage()">
+          <option value="pt">🇲🇿</option>
+          <option value="en">🇺🇸</option>
+        </select>
+      </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" data-translate="headerMobile">
       <div class="logo">
         <h1>Portfólio</h1>
       </div>
@@ -53,109 +63,98 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="" onclick="toggleMenu()">Página Inicial</a></li>
-          <li><a href="#esperience" onclick="toggleMenu()">Experiências</a></li>
-          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
-          <li><a href="#project" onclick="toggleMenu()">Projectos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contactos</a></li>
+          <li><a href="" onclick="toggleMenu()" id="home-link-mobile" data-translate="homeLinkMobile">Página Inicial</a></li>
+          <li><a href="#esperience" onclick="toggleMenu()" id="experience-link-mobile" data-translate="experienceLinkMobile">Experiências</a></li>
+          <li><a href="#about" onclick="toggleMenu()" id="about-link-mobile" data-translate="aboutLinkMobile">Sobre</a></li>
+          <li><a href="#project" onclick="toggleMenu()" id="projects-link-mobile" data-translate="projectsLinkMobile">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" id="contact-link-mobile" data-translate="contactLinkMobile">Contactos</a></li>
         </div>
       </div>
     </nav>
     <!-- Fim Sessão Header -->
+
     <!-- Sessão Hero -->
-    <section data-aos="fade-up"
-    data-aos-duration="3000" 
-    id="hero">
+    <section data-aos="fade-up" data-aos-duration="3000" id="hero">
       <div class="text">
-        <p>Bem-vindo<span>!!</span> <img src="assets/img/mao-acenando.png" alt="✨"></p>
-        <span>Respondo por</span>
-        <h2>Yuri Manhiça</h2>
-        <h3>Desenvolvedor de Software 🖥️</h3>
-        <p class="p">Sou um entusiasta WEB, baseado na Matola. <br>Apaixonado por transformar ideias em código. </p>
+        <p id="welcome-message" data-translate="welcomeMessage">Bem-vindo!! 😊</p>
+        <img class="img" src="">
+        <span id="respond-message" data-translate="respondMessage">Respondo por</span>
+        <h2 id="name" data-translate="name">Yuri Manhiça</h2>
+        <h3 id="developer-title" data-translate="developerTitle">Desenvolvedor de Software 🖥️</h3>
+        <p class="p" id="web-enthusiast" data-translate="webEnthusiast">Sou um entusiasta WEB, baseado na Matola. <br>Apaixonado por transformar ideias em código. </p>
         <div class="btn">
           <div class="btn1">
             <button>
-              <a
-                href="https://drive.google.com/file/d/1WpsbnhK57X-2K4-X8KsgLyBG71qf5TlF/view?usp=sharing"
-                target="_blank"
-                >Visualizar CV</a
-              >
+              <a href="https://drive.google.com/file/d/1WpsbnhK57X-2K4-X8KsgLyBG71qf5TlF/view?usp=sharing" target="_blank" id="view-cv-button" data-translate="viewCVButton">Visualizar CV</a>
             </button>
           </div>
-          <!--<div class="btn2">
-            <button><a href="#contact">Contacte-me</a></button>
-          </div>-->
         </div>
         <div class="icons">
           <a href="https://www.linkedin.com/in/yuri-manhiça/" target="_blank">
             <i class="bx bxl-linkedin"></i>
           </a>
-          <a href="https://www.github.com/YuriManhica/" target="_blank"
-            ><i class="bx bxl-github" style="color: #cb927f"></i
-          ></a>
+          <a href="https://www.github.com/YuriManhica/" target="_blank">
+            <i class="bx bxl-github" style="color: #cb927f"></i>
+          </a>
         </div>
       </div>
       <div class="img">
-        <img src="assets/img/me2.jpg" alt="portfolio" />
+        <img src="assets/img/img.png" alt="personal img" />
       </div>
     </section>
     <!--Fim Sessão Hero -->
 
     <!-- Sessão de Especialidades -->
-    <section data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom" data-aos-duration="1000" id="esperience">
+    <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="esperience">
       <div class="interface">
-        <h2>
-        Experiências
-      </h2>
-      <div class="flex">
-        <div class="box">
-          <div class="icon">
-            <img src="assets/img/MALESOFT.ico" alt="">
-          </div>
-          <div class="text">
-            <h3>MALEsoftware</h3>
-            <p>
-              Desempenhei um papel crucial no desenvolvimento da aplicação de Recursos Humanos, além de realizar a manutenção da aplicação web de seguradoras em VB e das aplicações desktops de Patrimônio, Crédito e Contabilidade. <br>Destaco meu envolvimento na adaptação dessas aplicações às demandas dos clientes e às tendências do mercado. Contribuí para a criação de Web Services, facilitando a integração entre sistemas. <br> Além disso, atuei ativamente na assistência e instrução a estagiários, promovendo o compartilhamento de conhecimentos e estimulando o crescimento da equipe.
-            </p>
-          
-          </div>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <img src="assets/img/IPETQ.PNG" alt="">
-          </div>
-          <div class="text">
-            <h3>IPET</h3>
-            <p>
+        <h2 id="experience-title" data-translate="experienceTitle">Experiências</h2>
+        <div class="flex">
+          <div class="box">
+            <div class="icon">
+              <img src="assets/img/MALESOFT.ico" alt="">
+            </div>
+            <div class="text">
+              <h3 id="malesoft-title" data-translate="malesoftTitle">MALEsoftware</h3>
+              <p id="malesoft-description" data-translate="malesoftDescription">
+                Desempenhei um papel crucial no desenvolvimento da aplicação de Recursos Humanos, além de realizar a manutenção da aplicação web de seguradoras em VB e das aplicações desktops de Patrimônio, Crédito e Contabilidade. <br>Destaco meu envolvimento na adaptação dessas aplicações às demandas dos clientes e às tendências do mercado. Contribuí para a criação de Web Services, facilitando a integração entre sistemas. <br> Além disso, atuei ativamente na assistência e instrução a estagiários, promovendo o compartilhamento de conhecimentos e estimulando o crescimento da equipe.</p>
+              </div>
+              </div>
+              <div class="box">
+              <div class="icon">
+              <img src="assets/img/IPETQ.PNG" alt="">
+              </div>
+              <div class="text">
+              <h3 id="ipet-title" data-translate="ipetTitle">IPET</h3>
+              <p id="ipet-description" data-translate="ipetDescription">
               Fui formador no curso de Administração de Sistemas de Redes, especificamente no módulo de Análise de Sistemas de Informação. Durante esse período, compartilhei conhecimentos práticos e teóricos, abordando temas como arquitetura de sistemas, design eficiente e segurança da informação. Meu objetivo era preparar os alunos para os desafios da administração de redes, incentivando o pensamento crítico e a adaptabilidade a ambientes dinâmicos. A experiência foi enriquecedora, contribuindo para o desenvolvimento profissional.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="icon">
-            <img src="assets/img/ISDB.png" alt="">
-          </div>
-          <div class="text">
-            <h3>ISDB</h3>
-            <p>
+              </p>
+              </div>
+              </div>
+              <div class="box">
+              <div class="icon">
+              <img src="assets/img/ISDB.png" alt="">
+              </div>
+              <div class="text">
+              <h3 id="isdb-title" data-translate="isdbTitle">ISDB</h3>
+              <p id="isdb-description" data-translate="isdbDescription">
               Durante minha licenciatura em Administração de Sistemas de Redes Informáticas, adquiri experiência abrangente em programação (Java, C#, Python). <br> Desenvolvi habilidades em segurança da informação, virtualização, gestão de projetos e administração de bancos de dados. Minha formação também incluiu prática em troubleshooting e ênfase na comunicação eficaz. Esta experiência preparou-me para desafios na área de tecnologia da informação, proporcionando uma base sólida para otimizar infraestruturas de TI.
-            </p>
-          </div>
-        </div>
-      </div>
+              </p>
+              </div>
+              </div>
+              </div>
+              </div>
+              
     </section>
     <!--Fim Sessão de Especialidades -->
+
     <!-- Sessão Sobre mim -->
-    <section data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1500" id="about">
+    <section data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="about">
       <div class="about_text">
-        <h3>Mais</h3>
-        <h2>Sobre Mim</h2>
-        <p>Sou um entusiasta da Web e apaixonado por transformar ideias em código. Com uma sólida base em HTML, CSS e JavaScript, estou sempre em busca de novos desafios para aprimorar minhas habilidades.</p>
+        <h3 id="more-about-title" data-translate="moreAboutTitle">Mais</h3>
+        <h2 id="about-me-title" data-translate="aboutMeTitle">Sobre Mim</h2>
+        <p id="web-enthusiast-again" data-translate="webEnthusiastAgain">Sou um entusiasta da Web e apaixonado por transformar ideias em código. Com uma sólida base em HTML, CSS e JavaScript, estou sempre em busca de novos desafios para aprimorar minhas habilidades.</p>
         <button class="button">
-          <a class=".btn-txt" href="#contact">Contacte-me</a>
+          <a class=".btn-txt" href="#contact" id="contact-me-button" data-translate="contactMeButton">Contacte-me</a>
         </button>
       </div>
       <div class="about_img">
@@ -165,44 +164,42 @@
     <!--Fim Sessão Sobre mim -->
 
     <!-- Sessão Projetos -->
-    <div data-aos="fade-up"
-    data-aos-duration="3000" class="portfolio" id="project">
+    <div data-aos="fade-up" data-aos-duration="3000" id="project" class="portfolio" >
       <div class="header">
           <div class="info">
-              <h2>Projectos Recentes</h2>
+            <h2  id="recentProjectsTitle" data-translate="recentProjectsTitle"></h2>
           </div>
-          <button><a href="https://www.github.com/YuriManhica/" target="_blank"><i class='bx bxl-github'></i>Visita Meu GitHub</a> </button>
+          <button><i class='bx bxl-github' ></i><a href="https://www.github.com/YuriManhica/" target="_blank" id="github-link-projects" data-translate="githubLinkProjects">Visita Meu GitHub</a> </button>
       </div>
-
       <div class="portfo-items">
           <div class="item">
               <img src="assets/img/soon.png" alt="Brevemente">
               <div class="info">
-                  <h4>Em desenvolvimento...</h4>
-                  <p>
+                  <h4 id="project1-title" data-translate="project1Title">Em desenvolvimento...</h4>
+                  <p id="project1-description" data-translate="project1Description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse varius enim in eros.
                   </p>
-                  <a href="https://yurimanhica.github.io/Portfolio/" target="_blank">Visitar <i class='bx bx-link-external'></i></a>
+                  <a href="https://yurimanhica.github.io/Portfolio/" target="_blank" id="visit-link1" data-translate="visitLink1">Visitar </a><i class='bx bx-link-external'></i>
               </div>
           </div>
           <div class="item">
               <img src="assets/img/soon.png" alt="Brevemente">
               <div class="info">
-                  <h4>Em desenvolvimento...</h4>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                  <h4 id="project2-title" data-translate="project2Title">Em desenvolvimento...</h4>
+                  <p id="project2-description" data-translate="project2Description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
                   </p>
-                  <a href="#">Visitar<i class='bx bx-link-external'></i></a>
+                  <a href="https://yurimanhica.github.io/Portfolio/" id="visit-link2" data-translate="visitLink2">Visitar </a><i class='bx bx-link-external'></i>
               </div>
           </div>
           <div class="item">
               <img src="assets/img/soon.png" alt="Brevemente">
               <div class="info">
-                  <h4>Em desenvolvimento...</h4>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                  <h4 id="project3-title" data-translate="project3Title">Em desenvolvimento...</h4>
+                  <p id="project3-description" data-translate="project3Description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
                   </p>
-                  <a href="#">Visitar<i class='bx bx-link-external'></i></a>
+                  <a href="" id="visit-link3" data-translate="visitLink3">Visitar</a><i class='bx bx-link-external'></i>
               </div>
           </div>
       </div>
@@ -210,15 +207,15 @@
     <!--Fim da Sessão Projetos -->
     
     <!-- Sessão Contato -->
-    <div id="contact">
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" id="contact">
       <div class="container">
         <div class="container-col" style="background-image:url('assets/img/waa.jpg')">
-          <h2>Para mais Informações</h2>
-          <h4>envie uma mensagem</h4>
+          <h2 id="contact-info-title" data-translate="contactInfoTitle">Para mais Informações</h2>
+          <h4 id="send-message-title" data-translate="sendMessageTitle">Envie uma mensagem</h4>
           <div class="inpu_btn">
             <form action="mailto:yurimanhica4@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="mensagem" placeholder="mensagem...." required>
-                <button type="submit" class="bt">Enviar</button>
+                <input type="text" name="mensagem" placeholder="..................." required>
+                <button type="submit" class="bt" id="send-button" data-translate="sendButton">Enviar</button>
             </form>
           </div>
         </div>
@@ -227,12 +224,13 @@
     <!--Fim da Sessão Contato -->
     
     <!--Sessão Footer -->
-    <div id="footer">
-      <p>© Copyright - Yuri Carlito Manhiça | Todos os direitos reservados.<br>
-      Portfólio</p>
-      
+    <div id="footer" >
+      <p id="copyright" data-translate="copyright">© Copyright - Yuri Carlito Manhiça | Todos os direitos reservados.</p>
+      <a href="#progress-bar-container" onclick="scrollToTarget('progress-bar-container'); return false;" id="scroll-top" data-translate="scrollTop"><i class='bx bxs-chevrons-up bx-fade-down' ></i></a>
     </div>
     <!--Fim da Sessão Footer -->
+
+  <script src="assets/js/script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

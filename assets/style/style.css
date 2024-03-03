@@ -12,10 +12,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .section-m1 {
   margin: 50px 0;
 }
-
+body {
+  scroll-behavior: smooth;
+  scroll-behavior: auto;
+  font-family: "Jost", sans-serif;
+}
 .section-p1 {
   padding: 40px 50px;
 }
@@ -29,14 +36,6 @@ a {
   text-decoration: none;
   font-family: "Jost", sans-serif;
 }
-body {
-  font-family: "Jost", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 /* TRANSITION */
 
 a,
@@ -147,7 +146,7 @@ a,
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 60px;
   position: sticky;
@@ -183,6 +182,11 @@ a,
   color: var(--span-text);
   width: 0%;
 }
+#language {
+  padding-left: 30px; /* Espaço para a bandeira */
+  background-repeat: no-repeat;
+  background-position: 5px center; /* Posição da bandeira */
+}
 
 #header .navbar a.active {
   color: var(--span-text);
@@ -203,7 +207,6 @@ a,
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  overflow: hidden;
   gap: 30px;
 }
 
@@ -219,10 +222,18 @@ a,
 }
 #hero .text img {
   width: 20px;
+  filter: saturate(160%);
+  display: inline;
 }
+
 #hero .text p {
   margin-left: 5px;
 }
+#welcome-message .text p::after {
+  background-image: url("assets/img/mao-acenando.png");
+  width: 20px;
+}
+
 #hero .text h3 {
   color: var(--span-text);
 }
@@ -304,7 +315,7 @@ a,
   transition: all ease-in-out 0.5s;
 }
 #hero .img img {
-  width: 300px;
+  height: 500px;
   float: left;
   margin-right: 100px;
   background-size: cover;
@@ -314,6 +325,7 @@ a,
   animation: anifoto 8s ease-in-out infinite;
   transition: ease-in-out 0.8s;
   z-index: 99;
+  cursor: pointer;
 }
 #hero img:hover {
   box-shadow: 0 0 25px #cb927f36, 0 0 50px #cb927f67, 0 0 100px #cb927f38;
@@ -445,6 +457,7 @@ a,
   height: 500px;
   padding: 15px;
   filter: saturate(120%);
+  margin: auto;
 }
 .portfolio {
   background-color: var(--span-text);
@@ -611,9 +624,20 @@ h4 {
   justify-content: center;
   color: var(--text);
   height: 100px;
+  width: 100%;
   padding: 20px 100px 0 20px;
   text-align: center;
+  position: relative;
 }
+
+#footer p {
+  padding-left: 400px;
+}
+#footer i {
+  font-size: 50px;
+  margin-left: 250px;
+}
+
 @keyframes anifoto {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
