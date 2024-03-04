@@ -8,6 +8,7 @@
   }
   #progress-bar-container {
     display: block;
+    width: 100vw;
   }
   #hamburger-nav {
     display: flex;
