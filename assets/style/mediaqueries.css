@@ -216,7 +216,7 @@
   }
   #hero {
     overflow: hidden;
-    margin-top: 20px;
+    margin: 0;
     width: 100%;
   }
 
