@@ -82,7 +82,7 @@
   .portfolio .portfo-items .item:hover {
     transform: scale(1.05);
   }
-  #about {
+  #about .container{
     overflow: hidden;
     flex-direction: column;
     height: 100%;
