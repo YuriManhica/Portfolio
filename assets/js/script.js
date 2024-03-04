@@ -137,15 +137,15 @@ const translations = {
     project1Title: "Em desenvolvimento...",
     project1Description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse varius enim in eros.",
-    visitLink1: "Visitar",
+    visitLink1: "Visitar <i class='bx bx-link-external'></i>",
     project2Title: "Em desenvolvimento...",
     project2Description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    visitLink2: "Visitar",
+    visitLink2: "Visitar <i class='bx bx-link-external'></i>",
     project3Title: "Em desenvolvimento...",
     project3Description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    visitLink3: "Visitar",
+    visitLink3: "Visitar <i class='bx bx-link-external'></i>",
 
     // Sessão Contato
     contactInfoTitle: "Para mais Informações",
@@ -154,11 +154,16 @@ const translations = {
     sendButton: "Enviar",
 
     // Sessão Footer
+    pt:"🇵🇹 Português",
+    en:"🇺🇸 Inglês",
     copyright:
       "© Copyright - Yuri Carlito Manhiça | Todos os direitos reservados.",
   },
   en: {
     // Sessão Header
+    pt:"🇵🇹 Portuguese",
+    en:"🇺🇸 English",
+    
     idioma: "Language: ",
     Port: "Porfolio",
     homeLink: "Home",
@@ -210,15 +215,15 @@ const translations = {
     project1Title: "In development...",
     project1Description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse varius enim in eros.",
-    visitLink1: "Visit",
+    visitLink1: "Visit <i class='bx bx-link-external'></i>",
     project2Title: "In development...",
     project2Description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    visitLink2: "Visit",
+    visitLink2: "Visit <i class='bx bx-link-external'></i>",
     project3Title: "In development...",
     project3Description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    visitLink3: "Visit",
+    visitLink3: "Visit <i class='bx bx-link-external'></i>",
 
     // Sessão Contato
     contactInfoTitle: "For more Information",
