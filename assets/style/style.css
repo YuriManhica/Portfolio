@@ -684,6 +684,7 @@ h4 {
 
 #footer p {
   margin: 0 auto; 
+  text-wrap: wrap;
 }
 
 #footer i {

@@ -128,8 +128,8 @@
     text-align: center; /* Centraliza o conteúdo no eixo horizontal */
   }
   #footer p {
-    white-space: nowrap;
     margin: auto;
+    text-wrap: wrap;
     padding: 5px 0; /* Adicionado algum preenchimento para espaçamento interno */
   }
   #footer i {
