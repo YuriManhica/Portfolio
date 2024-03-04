@@ -123,21 +123,22 @@
     flex-direction: column;
     height: auto; /* Alterado para 'auto' para acomodar o conteúdo verticalmente */
     padding: 20px; /* Adicionado algum preenchimento para espaçamento interno */
-    margin-bottom: 40px;
+    margin-block: 60px;
     text-align: center; /* Centraliza o conteúdo no eixo horizontal */
   }
   
   #footer p {
-    font-size: 14px;
     white-space: nowrap;
-    margin: 0;
+    margin: auto;
     padding: 5px 0; /* Adicionado algum preenchimento para espaçamento interno */
   }
   
   #footer i {
-    font-size: 30px;
-    margin: 0;
-    padding: 10px 0;
+    margin:0;
+    position: none; /* Posiciona o ícone absolutamente em relação ao #footer */
+    right: 50%; /* Posiciona o ícone a 20% da margem direita do #footer */
+    top: 100%; /* Posiciona o ícone verticalmente no centro do #footer */
+    transform: translateY(-50%); /* Corrige a posição vertical para centrar exatamente */
   }
 }
 
@@ -197,13 +198,14 @@
     flex-direction: column;
   }
   #footer p{
+    font-size: 14px;
     text-wrap: wrap;
   }
   #footer i {
     margin:0;
     position: none; /* Posiciona o ícone absolutamente em relação ao #footer */
-    right: 50%; /* Posiciona o ícone a 20% da margem direita do #footer */
-    top: 80%; /* Posiciona o ícone verticalmente no centro do #footer */
+    right: 45%; /* Posiciona o ícone a 20% da margem direita do #footer */
+    top: 100%; /* Posiciona o ícone verticalmente no centro do #footer */
     transform: translateY(-50%); /* Corrige a posição vertical para centrar exatamente */
   }
 }
@@ -242,5 +244,8 @@
   }
   #contact .inpu_btn button {
     width: 40%;
+  }
+  #footer i {
+    font-size: 27px; /* Corrige a posição vertical para centrar exatamente */
   }
 }
