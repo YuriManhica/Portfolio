@@ -54,7 +54,7 @@
   #esperience {
     overflow: hidden;
     height: max-content;
-    margin-bottom: 30px;
+
   }
   #esperience .interface h2 {
     padding-bottom: 80px;
@@ -90,6 +90,7 @@
     height: 60%;
     margin-bottom: 50px;
     margin: auto;
+    padding: 0;
   }
   #about .about_img img {
     margin: auto;
@@ -126,17 +127,15 @@
     margin-block: 60px;
     text-align: center; /* Centraliza o conteúdo no eixo horizontal */
   }
-  
   #footer p {
     white-space: nowrap;
     margin: auto;
     padding: 5px 0; /* Adicionado algum preenchimento para espaçamento interno */
   }
-  
   #footer i {
     margin:0;
     position: none; /* Posiciona o ícone absolutamente em relação ao #footer */
-    right: 50%; /* Posiciona o ícone a 20% da margem direita do #footer */
+    right: 45%; /* Posiciona o ícone a 20% da margem direita do #footer */
     top: 100%; /* Posiciona o ícone verticalmente no centro do #footer */
     transform: translateY(-50%); /* Corrige a posição vertical para centrar exatamente */
   }
@@ -177,7 +176,7 @@
     padding: 30px;
   }
   #about .about_text {
-    width: 350px;
+    width: 300px;
     font-size: 14px;
     word-spacing: 5px;
     margin: auto;
@@ -201,13 +200,7 @@
     font-size: 14px;
     text-wrap: wrap;
   }
-  #footer i {
-    margin:0;
-    position: none; /* Posiciona o ícone absolutamente em relação ao #footer */
-    right: 45%; /* Posiciona o ícone a 20% da margem direita do #footer */
-    top: 100%; /* Posiciona o ícone verticalmente no centro do #footer */
-    transform: translateY(-50%); /* Corrige a posição vertical para centrar exatamente */
-  }
+  
 }
 
 @media only screen and (max-width: 300px) {
