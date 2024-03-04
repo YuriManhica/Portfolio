@@ -190,8 +190,8 @@ const translations = {
 
     // Sessão Hero
     welcomeMessage: "Welcome!! ✨",
-    respondMessage: "I'm'",
-    name: "Yuri Manhiça",
+    respondMessage: "I go by 😊",
+    name: "Yuri Manhiça ",
     developerTitle: "Software Developer 🖥️",
     webEnthusiast:
       "I'm a WEB enthusiast, based in Matola. <br>Passionate about turning ideas into code.",

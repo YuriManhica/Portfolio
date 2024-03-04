@@ -33,9 +33,14 @@
     padding: 0;
     margin: 0;
   }
+  #language-selector_1{
+    display: block;
+    margin-left: 70%;
+    margin-top: 20px;
+  }
   #hero .img img {
     margin: auto;
-    margin-top: 100px;
+
     width: 250px;
   }
   #hero .icons {
@@ -154,22 +159,24 @@
     margin: auto;
   }
   #about .about_img img {
-    width: 400px;
+    width: 300px;
     margin: auto;
     padding: auto;
     padding: 30px;
   }
   #about .about_text {
-    width: 400px;
+    width: 350px;
+    font-size: 14px;
+    word-spacing: 5px;
     margin: auto;
     padding: auto;
     line-height: 1.3;
   }
-  #about .about_text h3 {
-    margin-bottom: 10px;
+  #project .header {
+    gap: 0 90px;
   }
-  #about .about_text p {
-    padding: 0;
+  #project .header button{
+    width: fit-content;
   }
 }
 
