@@ -70,6 +70,7 @@
     margin: 0;
   }
   .portfolio {
+    padding: 60px 30px;
     overflow: hidden;
     width: 100%;
   }
@@ -120,27 +121,27 @@
   }
   #footer {
     flex-direction: column;
-    height: 0;
-    padding: 0;
+    height: auto; /* Alterado para 'auto' para acomodar o conteúdo verticalmente */
+    padding: 20px; /* Adicionado algum preenchimento para espaçamento interno */
     margin-bottom: 40px;
+    text-align: center; /* Centraliza o conteúdo no eixo horizontal */
   }
+  
   #footer p {
-    text-align: center;
-    text-wrap: wrap;
     font-size: 14px;
-    padding: 0;
-    text-wrap: nowrap;
-    width: 100%;
+    white-space: nowrap;
     margin: 0;
+    padding: 5px 0; /* Adicionado algum preenchimento para espaçamento interno */
   }
+  
   #footer i {
-    padding: 10px 0 ;
     font-size: 30px;
     margin: 0;
+    padding: 10px 0;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   #hamburger-nav .logo {
     font-size: 14px;
     margin-left: 30px;
@@ -192,37 +193,43 @@
     width: 100%;
     margin: auto;
   }
+  #footer{
+    flex-direction: column;
+  }
+  #footer p{
+    text-wrap: wrap;
+  }
+  #footer i {
+    margin:0;
+    position: none; /* Posiciona o ícone absolutamente em relação ao #footer */
+    right: 50%; /* Posiciona o ícone a 20% da margem direita do #footer */
+    top: 80%; /* Posiciona o ícone verticalmente no centro do #footer */
+    transform: translateY(-50%); /* Corrige a posição vertical para centrar exatamente */
+  }
 }
 
 @media only screen and (max-width: 300px) {
-  #hamburger-nav .logo {
-    margin-left: 20px;
-  }
-  #hamburger-nav {
-    width: 400px;
-    height: 45px;
+  #language-selector_1{
+    margin: 0;
   }
   #hero {
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 90px;
-    width: 400px;
+    margin-top: 20px;
+    width: 100%;
   }
 
   #hero .img img {
     width: 130px;
-    display: block;
-    margin: auto;
   }
-  #hero .text {
-    padding: 10px;
-  }
-  .menu-links a {
-    font-size: 8px;
-  }
+ 
   #hero h3 {
     font-size: 16px;
+  }
+  #hero p {
+    font-size: 12px;
+  }
+  .portgolio{
+    gap: 2px;
   }
   #hero .btn button {
     font-size: 12px;
@@ -230,63 +237,10 @@
   #hero .btn {
     padding: 6px;
   }
-
-  #esperience .interface h2 {
-    padding-bottom: 80px;
+  #project .header {
+    gap: 0 20px;
   }
-  #esperience .flex .text {
-    width: 300px;
-    margin-left: 20%;
-  }
-  #about .container{
-    width: 100%;
-    margin-left: 20px;
-  }
-  #about .about_text {
-    width: 300px;
-    margin-left: 20px;
-  }
-  #about .about_img img {
-    width: 300px;
-    margin-left: 20%;
-  }
-  #project {
-    width: 100%;
-  }
-  .portfolio {
-    width: fit-content;
-    padding: 0;
-  }
-  .portfolio .portfo-items .item {
-    margin-block: 20px;
-  }
-  .portfolio .portfo-items {
-    width: 100%;
-  }
-
-  .portfolio .portfo-items .item:hover {
-    transform: scale(1.05);
-  }
-  #contact {
-    width: 400px;
-  }
-  #footer {
-    height: 0;
-    padding: 0;
-    margin-bottom: 40px;
-    width: 400px;
-  }
-  #footer p {
-    overflow: hidden;
-    font-size: 14px;
-    padding: 0;
-    text-wrap: nowrap;
-    width: 100%;
-    margin: 0;
-  }
-  #footer i {
-    font-size: 30px;
-
-    margin: 0;
+  #contact .inpu_btn button {
+    width: 40%;
   }
 }

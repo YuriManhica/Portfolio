@@ -183,9 +183,9 @@ a,
   width: 0%;
 }
 #language {
-  padding-left: 30px; /* Espaço para a bandeira */
+  padding-left: 30px; 
   background-repeat: no-repeat;
-  background-position: 5px center; /* Posição da bandeira */
+  background-position: 5px center; 
 }
 
 #header .navbar a.active {
@@ -377,15 +377,15 @@ a,
 }
 #hero img:hover {
   box-shadow: 0 0 25px #cb927f36, 0 0 50px #cb927f67, 0 0 100px #cb927f38;
-  transform: scale(1.05) rotate(2deg); /* Adicionando uma rotação de 5 graus */
-  border-radius: 10px; /* Adicionando suavização nas bordas */
-  filter: saturate(120%); /* Aumentando a saturação da cor em 50% */
+  transform: scale(1.05) rotate(2deg); 
+  border-radius: 10px; 
+  filter: saturate(120%); 
   transition: ease-in-out 0.5s;
   animation: anifoto 4s ease-in-out infinite;
 }
 #hero img:not(:hover) {
-  transform: scale(1) rotate(0deg); /* Voltando ao estado normal sem rotação */
-  filter: saturate(100%); /* Voltando à saturação normal */
+  transform: scale(1) rotate(0deg); 
+  filter: saturate(100%); 
 }
 #esperience {
   height: max-content;
@@ -409,7 +409,7 @@ a,
   margin-bottom: 20px;
 }
 #esperience .flex .box img {
-  display: block; /* Torna a imagem um elemento de bloco */
+  display: block; 
   margin: auto;
 }
 #esperience .flex .text h3 {
@@ -605,14 +605,15 @@ border-radius: 10px 10px 20px 20px;
   justify-content: center;
   flex-direction: column;
   color: var(--bg-button);
-  padding: 40px 100px 0 50px;
+  padding: 40px 50px 0 50px;
   height: 350px;
 }
+
 #contact .container-col {
   background: var(--span-text);
   border-radius: 8px;
   width: 700px;
-  margin: auto;
+  margin: auto; 
   color: var(--bg-button);
   padding: 30px;
   background-position: center;
@@ -676,18 +677,23 @@ h4 {
   color: var(--text);
   height: 100px;
   width: 100%;
-  padding: 60px 100px 0 20px;
+  padding: 60px 20px 0 20px; 
   text-align: center;
   position: relative;
 }
 
 #footer p {
-  text-wrap: nowrap;
-  padding-left: 400px;
+  white-space: nowrap; 
+  margin: 0 auto; 
 }
+
 #footer i {
   font-size: 50px;
-  margin-left: 250px;
+  margin-left: 20%; 
+  position: absolute; 
+  right: 5%; 
+  top: 50%; 
+  transform: translateY(-50%); 
 }
 
 @keyframes anifoto {
@@ -707,7 +713,7 @@ h4 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5px; /* Altura da barra de progresso */
+  height: 5px;
   background-color: var(--bg-button);
   z-index: 999999;
 }
@@ -715,5 +721,5 @@ h4 {
 #progress-bar {
   height: 100%;
   width: 0;
-  background-color: var(--span-text); /* Cor da barra de progresso */
+  background-color: var(--span-text); 
 }
