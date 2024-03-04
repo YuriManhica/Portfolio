@@ -4,11 +4,13 @@
   }
   #header {
     display: none;
+    overflow: hidden;
   }
   #progress-bar-container {
     display: block;
   }
   #hamburger-nav {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +24,7 @@
   }
 
   #hero {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     display: flex;
@@ -50,6 +53,7 @@
     display: none;
   }
   #esperience {
+    overflow: hidden;
     height: max-content;
     margin-bottom: 30px;
   }
@@ -66,6 +70,7 @@
     grid-template-columns: 1fr;
   }
   .portfolio {
+    overflow: hidden;
     width: 100%;
   }
   .portfolio .portfo-items {
@@ -79,6 +84,7 @@
     transform: scale(1.05);
   }
   #about {
+    overflow: hidden;
     flex-direction: column;
     height: 100%;
     margin-bottom: 50px;
@@ -104,6 +110,7 @@
     width: 90vw;
   }
   #contact {
+    overflow: hidden;
     margin: 0;
     padding: 0;
   }
@@ -112,12 +119,14 @@
     padding: auto;
   }
   #footer {
+    flex-direction: column;
     height: 0;
     padding: 0;
     margin-bottom: 40px;
   }
   #footer p {
-    overflow: hidden;
+    text-align: center;
+    text-wrap: wrap;
     font-size: 14px;
     padding: 0;
     text-wrap: nowrap;
@@ -125,6 +134,7 @@
     margin: 0;
   }
   #footer i {
+    padding: 10px 0 ;
     font-size: 30px;
     margin: 0;
   }
@@ -173,10 +183,14 @@
     line-height: 1.3;
   }
   #project .header {
-    gap: 0 90px;
+    gap: 0 60px;
   }
   #project .header button{
     width: fit-content;
+  }
+   .portfolio .portfo-items {
+    width: 100%;
+    margin: auto;
   }
 }
 

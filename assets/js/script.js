@@ -82,22 +82,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-// function changeLanguage() {
-//   const languageSelect = document.getElementById("language");
-//   const selectedLanguage = languageSelect.value;
-
-//   const titleElement = document.getElementById("port");
-//   const contentElement = document.getElementById("content");
-
-//   if (selectedLanguage === "en") {
-//     titleElement.textContent = "Portfolio";
-//     contentElement.textContent = "This is an example content.";
-//   } else {
-//     titleElement.textContent = "Portfólio";
-//     contentElement.textContent = "Este é um exemplo de conteúdo.";
-//   }
-// }
-
 // Dicionário de tradução
 const translations = {
   pt: {

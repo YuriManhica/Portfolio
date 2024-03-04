@@ -666,6 +666,7 @@ h4 {
 #contact .inpu_btn a {
   color: var(--bg-button);
 }
+
 #footer {
   background: var(--bg-button);
   display: flex;
@@ -680,6 +681,7 @@ h4 {
 }
 
 #footer p {
+  text-wrap: nowrap;
   padding-left: 400px;
 }
 #footer i {
