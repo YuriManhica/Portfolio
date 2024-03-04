@@ -389,6 +389,7 @@ a,
 }
 #esperience {
   height: max-content;
+  
 }
 #esperience h2 {
   text-align: center;
@@ -431,13 +432,13 @@ a,
   height: 120px;
 }
 
-#about {
+#about .container{
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-margin-bottom: 100px;
+  padding-block: 120px;
 }
 
 #about .about_text {
