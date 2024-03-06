@@ -249,7 +249,7 @@ a,
   color: var(--bg-button);
 }
 #hero {
-  height: 600px;
+  height: 800px;
   width: 100%;
   margin-block: auto;
   display: flex;
